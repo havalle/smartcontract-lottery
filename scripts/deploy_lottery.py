@@ -4,7 +4,11 @@ from brownie import Lottery
 
 def deploy_lottery():
     account = get_account(id="test-eth-rinkeby")
-    lottery = Lottery.deploy(get_contract("eth_usd_price_feed").address, get_contract("vrf_coordinator").address)
+    lottery = Lottery.deploy(
+        get_contract("eth_usd_price_feed").address,
+        get_contract("vrf_coordinator").address,
+    )
+
 
 def main():
     deploy_lottery()

@@ -11,13 +11,6 @@ contract Lottery is VRFConsumerBase, Ownable {
     address public recentWinner;
     uint256 public usdEntryFee;
 
-
-
-
-
-
-
-    
     AggregatorV3Interface public ethUsdPriceFeed;
     uint256 public randomness;
 
